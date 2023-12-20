@@ -22,8 +22,10 @@
     --brown-color:#501B01;
     --red-color: #A40004 ;
     --blue-color: #043A6B;
+    --blue-light-color: #D4E6F1;
     --green-color:#0D3D04;
     --yellow-color:#F1C40F;
+    --yellow-light-color:#F7DC6F;
 }
 
 /* Общие классы */
@@ -82,7 +84,7 @@ button {
     color: var(--brown-color);
     font-size: var(--font-size-light);
     font-weight: var(--font-weight-regular);
-    background-color: #e6f7e3;
+    background-color: var(--yellow-light-color);
 }
 
 .heading__content{
@@ -128,18 +130,27 @@ button {
 
 .logo-block img{
     border-radius: 10px;
-    border: solid 3px #0D3D04;
-    box-shadow: 2px 8px 16px 0px var(--green-color);
+    border: solid 3px var(--brown-color);
+    box-shadow: 2px 8px 16px 0px var(--brown-color);
 }
-
-.content__phone-block{
+.phone-block{
     display: flex;
     gap: 10px;
+    cursor: pointer;
+}
+.content__phone-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.number-block p{
+.content__phone-block h4{
     font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-bold);        
+    font-weight: var(--font-weight-bold);
+    margin: 0;        
+}
+.content__phone-block p{
+    font-size: var(--font-size-mini);
 }
 
 /* Секция Карусель */

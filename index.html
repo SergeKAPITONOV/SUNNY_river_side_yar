@@ -8,10 +8,25 @@
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/slide_pictures.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="CSS/qr_window.css">
 </head>
 <body>
+
+  <div class="qr__window" id="qrWindow">
+    <div class="qr__window-content" id="qrContent">
+        <div class="window-header">
+            <p>Ответим на звонок с 08:00 до 20:00. UTC +3</p>
+            <div class="modal-close" id="modalClose">
+                <img src="IMG/close_green.png" alt="cross">
+            </div>
+        </div>
+        <div class="qr__picture">
+          <img src="IMG/qr_big_size.png" alt="qr_big_size">
+        </div>        
+    </div>
+  </div>
+
   <header>
     <section class="heading__main">
       <div class="heading">
@@ -28,18 +43,14 @@
               </a>
             </div>
 
-            <div class="phone-block">
+            <div class="phone-block" id="phoneBlock">
+              <div class="qr__phone-block">
+                <img src="IMG/logo_qr-phone.svg" alt="logo_qr-phone">
+              </div>                  
               <div class="content__phone-block">
-                <div class="icon__phone-block">
-                  <img src="IMG/logo-phone.png" alt="IMG/logo-phone">
-                </div>                  
-                <div class="number-block">
-                  <p>+7 (920) 656-12-83</p>                                
-                </div>
+                <h4>+7 (920) 656-12-83</h4>                                
+                <p>Ежедневно с 08:00 до 20:00.</p>  
               </div>
-              <div class="workingTime_block">
-                <p>Ежедневно с 09:00 до 19:00.</p>
-              </div> 
             </div>
           </div>
         </div>
@@ -215,6 +226,7 @@
     <h3>Следующий</h3>
   </div>
 
+  <script src="JS/qr_Window.js"></script>
   <script src="JS/slide_pictures.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

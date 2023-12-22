@@ -10,6 +10,7 @@
     --font-weight-regular: 500;
     --font-weight-bold: 700;
 
+    --font-size-micro: 16px;
     --font-size-mini: 18px;
     --font-size-light: 21px;
     --font-size-medium: 28px;
@@ -24,8 +25,9 @@
     --blue-color: #043A6B;
     --blue-light-color: #D4E6F1;
     --green-color:#0D3D04;
+    --green-light-color:#D4EFDF;
     --yellow-color:#F1C40F;
-    --yellow-light-color:#F7DC6F;
+    --yellow-light-color:#FCF3CF ;
 }
 
 /* Общие классы */
@@ -79,7 +81,7 @@ button {
     button:focus {
     outline: none;
 }
-/* Секция Хедер */
+/* Секция "header" */
 .heading{
     color: var(--brown-color);
     font-size: var(--font-size-light);
@@ -153,7 +155,7 @@ button {
     font-size: var(--font-size-mini);
 }
 
-/* Секция Карусель */
+/* Секция "carousel" */
 .carousel p{
     text-shadow: 3px 3px 0px #000000;
 }
@@ -173,5 +175,92 @@ button {
     object-fit: cover;
 }
 
+/* Секция "footer__block" */
+.footer__block{
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-color: var(--green-light-color);
+}
 
-/* Секция слайдер картинок  */
+.footer__block-content{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 2rem;    
+}
+
+.footer__block-content a{
+    font-size: var(--font-size-mini);
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+.footer__block-content a:hover{   
+    color: var(--yellow-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.footer__block-content-houses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__block-content-room{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__block-content-connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__block-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__block-end ul{
+    color: var(--brown-color);
+    font-size: var(--font-size-micro);
+    list-style: none;
+    margin-bottom: 0;
+    text-transform: uppercase;    
+}
+
+.block__social-icon{
+    display: flex;   
+    gap: 52px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.block__social-icon a:nth-of-type(1){
+    width: 48px;
+    height: 48px;
+    background-image: url(../IMG/vk_green.png);
+    background-repeat: no-repeat;
+}
+
+.block__social-icon a:nth-of-type(1):hover{
+    background-image: url(../IMG/vk_yellow.png);
+    background-repeat: no-repeat;
+    transition: .3s;           
+}
+
+.block__social-icon a:nth-of-type(2){
+    width: 48px;
+    height: 48px;
+    background-image: url(../IMG/instagram-green.png);
+    background-repeat: no-repeat;
+}
+
+.block__social-icon a:nth-of-type(2):hover{
+    background-image: url(../IMG/instagram_yellow.png);
+    background-repeat: no-repeat;
+    transition: .3s;    
+}

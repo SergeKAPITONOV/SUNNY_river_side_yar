@@ -125,21 +125,18 @@ button {
     transition: .4s;
 }
 
-.icon__phone-block img{
-    width: 32px;
-    height: 32px;
-}
-
 .logo-block img{
     border-radius: 10px;
     border: solid 3px var(--brown-color);
     box-shadow: 2px 8px 16px 0px var(--brown-color);
 }
+
 .phone-block{
     display: flex;
     gap: 10px;
     cursor: pointer;
 }
+
 .content__phone-block{
     display: flex;
     flex-direction: column;
@@ -151,6 +148,7 @@ button {
     font-weight: var(--font-weight-bold);
     margin: 0;        
 }
+
 .content__phone-block p{
     font-size: var(--font-size-mini);
 }
@@ -175,18 +173,26 @@ button {
     object-fit: cover;
 }
 
+.carousel-indicators {
+    z-index: 1;
+}
+
 /* Секция "footer__block" */
 .footer__block{
-    padding-top: 54px;
-    padding-bottom: 54px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: var(--green-light-color);
 }
 
 .footer__block-content{
     display: flex;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 2rem;    
+}
+
+.footer__block-content div a:nth-of-type(1){
+    text-transform: uppercase;
 }
 
 .footer__block-content a{
@@ -197,28 +203,25 @@ button {
 
 .footer__block-content a:hover{   
     color: var(--yellow-color);
-    font-weight: var(--font-weight-bold);
 }
 
 .footer__block-content-houses{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .footer__block-content-room{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .footer__block-content-connect{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .footer__block-end{
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,10 +236,12 @@ button {
 }
 
 .block__social-icon{
-    display: flex;   
+    display: flex;
+    justify-content: center;   
     gap: 52px;
-    margin-right: 2rem;
+    padding-bottom: 2rem;
     cursor: pointer;
+    border-bottom: 2px solid var(--green-color);
 }
 
 .block__social-icon a:nth-of-type(1){

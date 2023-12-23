@@ -45,7 +45,7 @@
 .sidebar__content{
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .sidebar__content p{
@@ -113,7 +113,7 @@ button:focus {
   position: absolute;
   left: 35%;
   top: 50%;
-  z-index: 100;
+  z-index: 0;
 }
 
 .slide__pitures-block .controls .down-button {

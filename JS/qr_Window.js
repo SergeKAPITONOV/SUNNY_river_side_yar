@@ -1,4 +1,5 @@
-const buttonModal = document.getElementById('phoneBlock'); 
+const buttonModal = document.getElementById('phoneBlock');
+const btnFooterPhone = document.getElementById('aFooterPhone') 
 const modalWindow = document.getElementById('qrWindow');
 const modalContent = document.getElementById('qrContent');
 const modalClose = document.getElementById('modalClose');
@@ -14,6 +15,12 @@ buttonModal.addEventListener('click', () => {
     modalWindow.style.visibility = 'visible';
     modalContent.style.transform = 'translateY(0)';
 });
+
+btnFooterPhone.addEventListener('click',() => {
+    modalWindow.style.opacity = '1';
+    modalWindow.style.visibility = 'visible';
+    modalContent.style.transform = 'translateY(0)';
+})
 
 modalClose.addEventListener('click', () =>{
     modalWindow.style.opacity = '0';

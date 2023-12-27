@@ -1,11 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap"); */
-
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
 .slide__pitures-content{
   text-align: center;
   padding-top: 90px;
@@ -13,7 +5,7 @@
 }
 
 .slide__pitures-container{
-  padding-bottom: 90px;
+  padding-bottom: 3rem;  
 }
 
 .slide__pitures-block {
@@ -53,9 +45,9 @@
   font-weight: var(--font-weight-bold);
 }
 
-.sidebar__content h4 {
-  font-size: var(--font-size-height);
-  font-weight: var(--font-weight-bold);  
+.sidebar__content h5 {
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;  
 }
 
 .list__house li{

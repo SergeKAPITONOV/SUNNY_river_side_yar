@@ -188,9 +188,21 @@ button:focus {
 }
 
 .hotel__block-room{
-    display: flex;
+    display: flex;    
     padding-bottom: 3rem;
+}
+
+.hotel__block-pictures{
+    display: flex;
     gap: .5rem;
+    flex: 69.86%;
+    width: 100%;
+}
+
+.hotel__block-pictures img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;    
 }
 
 .hotel__block-header{   
@@ -199,23 +211,21 @@ button:focus {
 
 .hotel__block-content{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;    
+    flex: 30.14%;
+    
 }
 
-#hotelRoomTwo{
+.room__row-flex{
     flex-direction: row-reverse;
 }
-/* .hotel__block-pictures-bathroom{
-    border-radius: 1rem;
-    box-shadow: .1rem .5rem 1rem 0rem var(--brown-color);
+.img__row-flex{
+    justify-content: flex-end;
 }
-.hotel__block-pictures-room{
-    border-radius: 1rem;
-    box-shadow: .1rem .5rem 1rem 0rem var(--brown-color);
-} */
 
 .hotel__block-content h5{
     font-weight: var(--font-weight-bold);
@@ -230,8 +240,7 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding: 0rem 2rem;   
+    gap: 2rem;  
 }
 
 .hotel__block-content-grid p{

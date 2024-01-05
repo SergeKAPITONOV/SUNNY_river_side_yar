@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="CSS/slide_pictures.css">
   <link rel="stylesheet" href="CSS/qr_window.css">
   <link rel="stylesheet" href="CSS/style.css">
+  <!-- <link rel="stylesheet" href="CSS/style_1920.css"> -->
 </head>
 <body>
   <!-- Секция "qr__window" -->
@@ -31,7 +32,7 @@
     <section class="heading__main">
       <div class="heading">
         <div class="wrapper">
-          <div class="heading__content">
+          <div class="heading__content box__pdng">
             <div class="adress-block">
               <a href="https://yandex.ru/maps/?ll=39.732556%2C57.639941&z=14.2"></a>
               <p>Ярославская область,<br>Ивняковское сельское<br>поселение.</p>
@@ -60,7 +61,7 @@
   <!-- Секция "carousel" -->
   <section class="carousel">
     <!-- <div class="wrapper"> -->
-      <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel slide" id="carouselExampleCaptions" >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -99,10 +100,9 @@
         </button>
       </div>
     <!-- </div> -->
-  </section>
-  
+  </section>  
   <!-- Секция "slide_pictures" -->
-  <section class="slide__pitures">
+  <section class="slide__pitures box__pdng">
     <div class="wrapper">
       <div class="slide__pitures-content" id="slideHouses">
         <h4>Предлагаем к бронированию.</h4>
@@ -216,8 +216,7 @@
         </div>
       </div>
     </div>
-  </section>
-  
+  </section>  
   <!-- Секция "hotel__block" -->
   <section class="hotel__block" id="hotelRoom">
     <div class="wrapper">
@@ -269,8 +268,8 @@
         </div>
       </div>
       <!-- Номер 2 -->
-      <div class="hotel__block-room room__row-flex">
-        <div class="hotel__block-pictures img__row-flex">
+      <div class="hotel__block-room room__row-reverse" id="hotelRoomTwo">
+        <div class="hotel__block-pictures img__row-reverse">
           <div class="hotel__block-pictures-bathroom box__shdw-rds">
             <img src="IMG/HOTELROOM/bathroom_2.jpg" alt="bathroom_2">
           </div>
@@ -357,12 +356,68 @@
 
     </div>
   </section>
+  <!-- Секция "rest" -->
+  <section class="rest__block box__pdng">
+    <div class="wrapper">
+      <div class="rest__block-content">
+        <div class="rest__block-content_header">
+          <h3>Досуг</h3>
+          <p>В распоряжении гостей есть дополнительная объекты для организации отдыха.</p>
+        </div>
+        <div class="rest__block-content_flex">
+          <div class="rest__block-card" id="bathHouse">
+            <div class="rest__block-card_img box__shdw-rds" >
+              <img src="IMG/bathhouse.png" alt="bathhouse">
+            </div>
+            <h5>Русская баня на дровах</h5>
+            <li>на 6 человек</li>
+            <p>3 000 ₽/ 2 часа</p>
+            <div class="hotel__btn">
+              <button class="rest__btn-block btn__basic">Бронировать</button>
+            </div>
+          </div>
+          <div class="rest__block-card" id="pavilionHookah">
+            <div class="rest__block-card_img box__shdw-rds">
+              <img src="IMG/pavilion.png" alt="pavilion">
+            </div>
+            <h5>Беседка-кальянная</h5>
+            <li>на 8 - 10 человек</li>
+            <p>5 000 ₽/сутки</p>
+            <div class="hotel__btn">
+              <button class="rest__btn-block btn__basic">Бронировать</button>
+            </div>
+          </div>
+          <div class="rest__block-card" id="terraceSummer">
+            <div class="rest__block-card_img box__shdw-rds">
+              <img src="IMG/terrace.png" alt="terrace">
+            </div>
+            <h5>Летняя веранда</h5>
+            <li>площадь 200 кв.м, кейтеринг</li>
+            <p>3 000 ₽ с человека</p>
+            <div class="hotel__btn">
+              <button class="rest__btn-block btn__basic">Бронировать</button>
+            </div>
+          </div>
+          <div class="rest__block-card" id="museumOpenAir">
+            <div class="rest__block-card_img box__shdw-rds">
+              <img src="IMG/museum.png" alt="museum">
+            </div>
+            <h5>Музей</h5>
+            <li>Старых вещей из города Молога </li>
+            <p>Бесплатно</p>
+            <div class="hotel__btn">
+              <button class="rest__btn-block btn__basic">Бронировать</button>
+            </div>
+          </div>
 
-
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Секция "footer" -->
   <footer>
-    <section class="footer__block">
+    <section class="footer__block box__pdng">
         <div class="wrapper">
           <div class="footer__block-navbar">
             <div class="footer__block-content">
@@ -389,9 +444,10 @@
               </div>
               <div class="footer__block-content-room">
                 <a href="#">Досуг</a>
-                <a href="#">баня</a>
-                <a href="#">веранда</a>
-                <a href="#">беседка</a>
+                <a href="#bathHouse">баня</a>
+                <a href="#pavilionHookah">беседка-кальянная</a>
+                <a href="#terraceSummer">летняя веранда</a>
+                <a href="#museumOpenAir">музей</a>
               </div>              
             </div>
           </div>

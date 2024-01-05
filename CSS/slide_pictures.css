@@ -1,11 +1,9 @@
+.slide__pitures{
+  background-color: var(--blue-light-color);
+}
 .slide__pitures-content{
   text-align: center;
-  padding-top: 90px;
   padding-bottom: 10px;
-}
-
-.slide__pitures-container{
-  padding-bottom: 3rem;  
 }
 
 .slide__pitures-block {
@@ -51,7 +49,7 @@
 }
 
 .list__house li{
-  font-size: var(--font-size-light);
+  font-size: var(--font-size-mini);
 }
 
 .sidebar__btn{

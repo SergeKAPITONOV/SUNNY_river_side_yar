@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;500;600&display=swap'); */
 
@@ -66,6 +66,16 @@ body{
     color: var(--brown-color);
 }
 
+.box__pdng{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.box__shdw-rds{
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem 0rem var(--brown-color);
+}
+
 .btn__basic{
     background-color: var(--yellow-color);
     border-radius: 1rem;
@@ -87,10 +97,6 @@ button:focus {
     outline: none;
 }
 
-.box__shdw-rds{
-    border-radius: 1rem;
-    box-shadow: .1rem .5rem 1rem 0rem var(--brown-color);
-}
 
 /* Секция "header" */
 .heading{
@@ -101,8 +107,6 @@ button:focus {
 }
 
 .heading__content{
-    padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -115,12 +119,12 @@ button:focus {
 .adress-block{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .adress-block a{
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     background-image: url(../IMG/icon_address.png);
     background-repeat: no-repeat;
@@ -128,8 +132,8 @@ button:focus {
 }
 
 .adress-block a:hover{
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background-image: url(../IMG/icon_placeMarker.png);
     background-repeat: no-repeat;
     opacity: 1;
@@ -159,12 +163,19 @@ button:focus {
 }
 
 /* Секция "carousel" */
+.carousel-caption{
+    margin-bottom: 4rem;
+}
+
 .carousel p{
     text-shadow: 3px 3px 0px #000000;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
 }
 
 .carousel h1{
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
     text-shadow: 3px 3px 0px #000000;
 }
 
@@ -190,6 +201,7 @@ button:focus {
 .hotel__block-room{
     display: flex;    
     padding-bottom: 3rem;
+    justify-content: space-between;
 }
 
 .hotel__block-pictures{
@@ -217,14 +229,15 @@ button:focus {
     justify-content: space-between;
     padding: 1rem;    
     flex: 30.14%;
-    
 }
 
-.room__row-flex{
+.room__row-reverse{
     flex-direction: row-reverse;
+    /* justify-content: flex-end; */
 }
-.img__row-flex{
-    justify-content: flex-end;
+
+.img__row-reverse{
+    flex-direction: row-reverse;
 }
 
 .hotel__block-content h5{
@@ -253,11 +266,51 @@ button:focus {
     text-transform: uppercase;
 }
 
+/* Секция "rest" */
+.rest__block{
+    background-color: var(--blue-light-color);
+}
+
+.rest__block-content_header{
+    text-align: center;
+}
+
+.rest__block-content_flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;    
+}
+
+.rest__block-card{
+    text-align: center;        
+}
+
+.rest__block-card img{
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+
+}
+
+.rest__block-card h5{
+    margin-top: 1rem;
+    font-weight: var(--font-weight-bold);  
+}
+
+.rest__block-card p{
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+}
+
+.rest__block-card li{
+    list-style: none;
+    font-size: var(--font-size-mini);
+    font-weight: var(--font-weight-bold);
+}
 
 /* Секция "footer__block" */
 .footer__block{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     background-color: var(--green-light-color);
 }
 
@@ -315,15 +368,15 @@ button:focus {
 .block__social-icon{
     display: flex;
     justify-content: center;   
-    gap: 52px;
+    gap: 3rem;
     padding-bottom: 2rem;
     cursor: pointer;
-    border-bottom: 2px solid var(--green-color);
+    border-bottom: .1rem solid var(--green-color);
 }
 
 .block__social-icon a:nth-of-type(1){
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background-image: url(../IMG/vk_green.png);
     background-repeat: no-repeat;
 }
@@ -335,8 +388,8 @@ button:focus {
 }
 
 .block__social-icon a:nth-of-type(2){
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background-image: url(../IMG/instagram-green.png);
     background-repeat: no-repeat;
 }

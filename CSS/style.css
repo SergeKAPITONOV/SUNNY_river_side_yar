@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
 
 /* @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;500;600&display=swap'); */
 
@@ -59,6 +59,7 @@ h4{
 
 h5{
     font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-bold);
 }
 
 body{
@@ -85,7 +86,6 @@ body{
     cursor: pointer;
     font-size: var(--font-size-mini);
     padding: 1rem;
-    /* opacity: .7; */
 }
 
 .btn__basic:hover {
@@ -166,6 +166,16 @@ button:focus {
 .carousel-caption{
     margin-bottom: 4rem;
 }
+.carousel-control-prev-icon{
+    background-image: url(../IMG/icons8_back.png);
+    width: 3rem;
+    height: 3rem;
+}
+.carousel-control-next-icon{
+    background-image: url(../IMG/icons8_next.png);
+    width: 3rem;
+    height: 3rem;
+}
 
 .carousel p{
     text-shadow: 3px 3px 0px #000000;
@@ -191,6 +201,12 @@ button:focus {
 .carousel-indicators {
     z-index: 1;
 }
+.carousel-indicators [data-bs-target]{
+    height: 6px;
+    border: solid 1px white;
+    border-radius: 4px;    
+}
+
 
 /* Секция "hotel__block" */
 .hotel__block{
@@ -233,15 +249,10 @@ button:focus {
 
 .room__row-reverse{
     flex-direction: row-reverse;
-    /* justify-content: flex-end; */
 }
 
 .img__row-reverse{
     flex-direction: row-reverse;
-}
-
-.hotel__block-content h5{
-    font-weight: var(--font-weight-bold);
 }
 
 .hotel__block-content p{
@@ -290,12 +301,10 @@ button:focus {
     border-radius: 1rem;
     height: 100%;
     width: 100%;
-
 }
 
 .rest__block-card h5{
-    margin-top: 1rem;
-    font-weight: var(--font-weight-bold);  
+    margin-top: 1rem; 
 }
 
 .rest__block-card p{
@@ -308,6 +317,36 @@ button:focus {
     font-size: var(--font-size-mini);
     font-weight: var(--font-weight-bold);
 }
+
+/* Cекция "advantages" */
+.advantages__block{
+    background-color: var(--yellow-light-color);
+}
+
+.advantages__block-content_header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.advantages__block-content_flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.advantages__block-content_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.advantages__block-content_card p{
+    margin: 0;
+}
+
 
 /* Секция "footer__block" */
 .footer__block{
@@ -360,6 +399,7 @@ button:focus {
 .footer__block-end ul{
     color: var(--brown-color);
     font-size: var(--font-size-micro);
+    font-weight: var(--font-weight-light);
     list-style: none;
     margin-bottom: 0;
     text-transform: uppercase;    
@@ -375,27 +415,27 @@ button:focus {
 }
 
 .block__social-icon a:nth-of-type(1){
-    width: 3rem;
-    height: 3rem;
-    background-image: url(../IMG/vk_green.png);
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(../IMG/ICON/icons8_vk-green.png);
     background-repeat: no-repeat;
 }
 
 .block__social-icon a:nth-of-type(1):hover{
-    background-image: url(../IMG/vk_yellow.png);
+    background-image: url(../IMG/ICON/icons8_vk-blue.png);
     background-repeat: no-repeat;
     transition: .3s;           
 }
 
 .block__social-icon a:nth-of-type(2){
-    width: 3rem;
-    height: 3rem;
-    background-image: url(../IMG/instagram-green.png);
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(../IMG/ICON/icons8_instagram-green.png);
     background-repeat: no-repeat;
 }
 
 .block__social-icon a:nth-of-type(2):hover{
-    background-image: url(../IMG/instagram_yellow.png);
+    background-image: url(../IMG/ICON/icons8_instagram-rainbow.png);
     background-repeat: no-repeat;
     transition: .3s;    
 }

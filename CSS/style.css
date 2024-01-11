@@ -164,7 +164,7 @@ button:focus {
 
 /* Секция "carousel" */
 .carousel-caption{
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
 }
 .carousel-control-prev-icon{
     background-image: url(../IMG/icons8_back.png);
@@ -178,7 +178,7 @@ button:focus {
 }
 
 .carousel p{
-    text-shadow: 3px 3px 0px #000000;
+    text-shadow: .2rem .2rem 0rem #000000;
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
 }
@@ -186,11 +186,12 @@ button:focus {
 .carousel h1{
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bold);
-    text-shadow: 3px 3px 0px #000000;
+    text-shadow: .2rem .2rem 0rem #000000;
+    text-transform: uppercase;
 }
 
 .carousel h4{
-    text-shadow: 3px 3px 0px #000000;
+    text-shadow: .2rem .2rem 0rem #000000;
 }
 
 .carousel .carousel-item img{
@@ -202,9 +203,9 @@ button:focus {
     z-index: 1;
 }
 .carousel-indicators [data-bs-target]{
-    height: 6px;
-    border: solid 1px white;
-    border-radius: 4px;    
+    height: .4rem;
+    border: solid .1rem #FFFFFF;    
+    border-radius: .25rem;    
 }
 
 
@@ -347,6 +348,38 @@ button:focus {
     margin: 0;
 }
 
+
+/* Секция "about_us" */
+.about__block{
+    background-color: var(--blue-light-color);
+}
+.about__block-content_header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about__block-content_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about__block-content_text{
+    flex: 51.37%;
+}
+
+.about__block-content_text p{
+    text-indent: 3rem;
+}
+
+.about__block-content_pictures{
+    flex: 45.34%;
+}
+
+.about__block-content_pictures img{
+    width: 100%;
+} 
 
 /* Секция "footer__block" */
 .footer__block{

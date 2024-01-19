@@ -86,6 +86,7 @@ body{
     cursor: pointer;
     font-size: var(--font-size-mini);
     padding: 1rem;
+    text-decoration: none;
 }
 
 .btn__basic:hover {

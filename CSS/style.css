@@ -44,6 +44,10 @@
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 p{
     font-size: var(--font-size-light);    
 }
